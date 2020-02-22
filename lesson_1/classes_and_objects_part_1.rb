@@ -6,7 +6,8 @@
 # the car to speed up, brake, and shut the car off.
 
 class MyCar
-  attr_accessor :year, :color, :model, :speed
+  attr_accessor :color, :speed
+  attr_reader :year
 
   def initialize(year, color, model)
     @year = year
@@ -26,4 +27,17 @@ class MyCar
   def shut_off
     self.speed = 0
   end
+
+  def spray_paint(color)
+    self.color = color
+  end
 end
+
+# Add an accessor method to your MyCar class to change and view the color
+# of your car. Then add an accessor method that allows you to view, but
+# not modify, the year of your car.
+
+# You want to create a nice interface that allows you to accurately
+# describe the action you want your program to perform. Create a method
+# called spray_paint that can be called on an object and will modify the
+# color of the car.
