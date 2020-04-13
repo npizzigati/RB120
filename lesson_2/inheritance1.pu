@@ -1,0 +1,21 @@
+@startuml
+scale 2
+
+Pet ^-- Cat
+Pet ^-- Dog
+Dog ^-- Bulldog
+
+class Pet {
+  {method} run
+  {method} jump
+}
+
+class Dog {
+  {method} swim
+  {method} fetch
+}
+
+class Cat {
+  {method} speak
+}
+@enduml
